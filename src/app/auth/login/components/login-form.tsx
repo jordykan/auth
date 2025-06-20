@@ -1,6 +1,6 @@
 "use client";
 
-import { SignUpEmailActions } from "@/actions/sign-up-email-actions";
+import { SignInEmailActions } from "@/actions/sign-in-email-actions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -8,20 +8,19 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "sonner";
 
-const RegisterForm = () => {
+const LoginForm = () => {
   const [isPending, setIsPending] = useState(false);
   const router = useRouter();
-
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsPending(true);
     const formData = new FormData(event.target as HTMLFormElement);
-    const { error } = await SignUpEmailActions(formData);
+    const { error } = await SignInEmailActions(formData);
     if (error) {
       toast.error(error);
       setIsPending(false);
     } else {
-      toast.success("Registro completado");
+      toast.success("Bienvenido");
       router.push("/auth/profile");
     }
     setIsPending(false);
@@ -29,10 +28,6 @@ const RegisterForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 max-w-sm w-full">
-      <div className="space-y-2">
-        <Label htmlFor="name">Name</Label>
-        <Input id="name" name="name" />
-      </div>
       <div className="space-y-2">
         <Label htmlFor="email">Email</Label>
         <Input id="email" type="email" name="email" />
@@ -43,10 +38,10 @@ const RegisterForm = () => {
       </div>
 
       <Button type="submit" className="w-full" disabled={isPending}>
-        Register
+        Login
       </Button>
     </form>
   );
 };
 
-export default RegisterForm;
+export default LoginForm;

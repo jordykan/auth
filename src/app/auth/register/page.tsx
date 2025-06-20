@@ -1,3 +1,4 @@
+import Link from "next/link";
 import RegisterForm from "./components/RegisterForm";
 
 const Page = () => {
@@ -8,6 +9,12 @@ const Page = () => {
       </div>
 
       <RegisterForm />
+      <p className="text-muted-foreground text-sm">
+        No tienes una cuenta?{" "}
+        <Link href="/auth/login" className="hover:text-foreground">
+          Login
+        </Link>
+      </p>
     </div>
   );
 };
