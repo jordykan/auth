@@ -1,6 +1,7 @@
 "use server";
 
 import { auth } from "@/lib/auth";
+import { APIError } from "better-auth/api";
 import { headers } from "next/headers";
 
 export const SignInEmailActions = async (formData: FormData) => {
@@ -22,8 +23,8 @@ export const SignInEmailActions = async (formData: FormData) => {
 
     return { error: null };
   } catch (error) {
-    if (error instanceof Error) {
-      return { error: "Ooops! something went wrong whilte registering" };
+    if (error instanceof APIError) {
+      return { error: error.message };
     }
     return { error: "Internal server error" };
   }

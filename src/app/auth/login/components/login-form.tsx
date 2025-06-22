@@ -21,7 +21,7 @@ const LoginForm = () => {
       setIsPending(false);
     } else {
       toast.success("Bienvenido");
-      router.push("/auth/profile");
+      router.push("/profile");
     }
     setIsPending(false);
   };

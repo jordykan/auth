@@ -22,7 +22,7 @@ const RegisterForm = () => {
       setIsPending(false);
     } else {
       toast.success("Registro completado");
-      router.push("/auth/profile");
+      router.push("/profile");
     }
     setIsPending(false);
   };
