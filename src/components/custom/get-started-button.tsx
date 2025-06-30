@@ -9,7 +9,7 @@ const GetStartedButton = () => {
   if (isPending) {
     return (
       <Button size="sm" className="opacity-50">
-        Get Started
+        Iniciando
       </Button>
     );
   }
@@ -17,10 +17,18 @@ const GetStartedButton = () => {
   const href = session ? "auth/profile" : "/auth/login";
   return (
     <div className="flex flex-col items-center gap-4 ">
+      {/* {session && (
+        <p className="flex  gap-2">
+          <span
+            data-role={session.user.role}
+            className="size-4 rounded-full animate-pulse data-[role=USER]:bg-blue-600 data-[role=ADMIN]:bg-green-600"
+          />
+          Bienvenido de nuevo {session.user.name}!{" "}
+        </p>
+      )} */}
       <Button size="sm" asChild>
-        <Link href={href}>Get Started</Link>
+        <Link href={href}>Iniciar</Link>
       </Button>
-      {session && <p>Welcome Back, {session.user.name}! </p>}
     </div>
   );
 };

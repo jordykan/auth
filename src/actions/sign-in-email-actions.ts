@@ -18,7 +18,7 @@ export const SignInEmailActions = async (formData: FormData) => {
         email,
         password,
       },
-      asResponse: true,
+      // asResponse: true,
     });
 
     return { error: null };
