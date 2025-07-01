@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const Page = async () => {
   return (
     //   <div className="space-y-4">
-    //     <MagicLinkForm />
+    //
     //
 
     <div className="bg-muted flex min-h-svh flex-col items-center justify-center p-6 md:p-10">

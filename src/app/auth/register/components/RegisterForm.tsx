@@ -31,24 +31,6 @@ const RegisterForm = () => {
   };
 
   return (
-    // <form onSubmit={handleSubmit} className="space-y-4 max-w-sm w-full">
-    //   <div className="space-y-2">
-    //     <Label htmlFor="name">Name</Label>
-    //     <Input id="name" name="name" />
-    //   </div>
-    //   <div className="space-y-2">
-    //     <Label htmlFor="email">Email</Label>
-    //     <Input id="email" type="email" name="email" />
-    //   </div>
-    //   <div className="space-y-2">
-    //     <Label htmlFor="password">Password</Label>
-    //     <Input id="password" type="password" name="password" />
-    //   </div>
-
-    //   <Button type="submit" className="w-full" disabled={isPending}>
-    //     Register
-    //   </Button>
-    // </form>
     <div className="flex flex-col gap-6">
       <Card className="overflow-hidden p-0">
         <CardContent className=" p-0">

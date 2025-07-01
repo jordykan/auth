@@ -1,6 +1,7 @@
 "use client";
 
 import { SignInEmailActions } from "@/actions/sign-in-email-actions";
+import MagicLinkForm from "@/components/custom/magic-link-form";
 import ReturnButton from "@/components/custom/return-button";
 import SingInOauthButton from "@/components/custom/sign-in-oauth-buttons";
 import { Button } from "@/components/ui/button";
@@ -98,6 +99,7 @@ const LoginForm = () => {
           </div>
         </CardContent>
       </Card>
+
       <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
         <ReturnButton href="/" label="Regresar al inicio " />
       </div>

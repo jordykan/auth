@@ -32,7 +32,7 @@ export const sendEmailActions = async ({
   };
 
   try {
-    await transport.sendMail(mailOptions);
+    transport.sendMail(mailOptions);
     return { success: true };
   } catch (error) {
     console.log("sendMailActions", error);

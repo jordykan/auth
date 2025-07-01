@@ -59,7 +59,7 @@ const SingInOauthButton = ({ provider, signUp }: SignInOauthButtonProps) => {
               fill="currentColor"
             />
           </svg>
-          <span className="sr-only">Login with Githb</span>
+          <span className="sr-only">Login with Google</span>
         </>
       )}
     </Button>
