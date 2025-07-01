@@ -1,10 +1,6 @@
 import ReturnButton from "@/components/custom/return-button";
 
-interface PageProps {
-  searchParams: Promise<{ error: string }>;
-}
-const Page = async ({ searchParams }: PageProps) => {
-  const sp = await searchParams;
+const Page = async () => {
   return (
     <div className="px-8 py-16 container mx-auto max-w-screen-lg space-y-8">
       <div className="space-y-8">

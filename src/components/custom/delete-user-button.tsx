@@ -36,7 +36,6 @@ export const DeleteUserButton = ({ userId }: DelteUserButtonProps) => {
 };
 
 export const PlaceholderDeleteUserButton = () => {
-  const [isPending, setIsPending] = useState(false);
   return (
     <Button
       className="size-7 rounded-sm"

@@ -1,10 +1,6 @@
 import { DarkMode } from "@/components/custom/dark-mode";
 import GetStartedButton from "@/components/custom/get-started-button";
 import MagicLinkForm from "@/components/custom/magic-link-form";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Github } from "lucide-react";
-import Link from "next/link";
 
 const Page = () => {
   return (

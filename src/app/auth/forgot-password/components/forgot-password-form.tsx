@@ -11,9 +11,8 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { forgetPassword, sendVerificationEmail } from "@/lib/auth-client";
-import { ArrowLeft, Mail } from "lucide-react";
-import Link from "next/link";
+import { forgetPassword } from "@/lib/auth-client";
+import { Mail } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { toast } from "sonner";

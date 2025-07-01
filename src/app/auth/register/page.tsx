@@ -1,6 +1,4 @@
-import Link from "next/link";
 import RegisterForm from "./components/RegisterForm";
-import SingInOauthButton from "@/components/custom/sign-in-oauth-buttons";
 
 const Page = () => {
   return (

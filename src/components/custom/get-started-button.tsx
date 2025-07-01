@@ -3,8 +3,6 @@
 import { useSession } from "@/lib/auth-client";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { DarkMode } from "./dark-mode";
-
 const GetStartedButton = () => {
   const { data: session, isPending } = useSession();
   if (isPending) {

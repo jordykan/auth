@@ -14,7 +14,7 @@ const SingOutButton = () => {
         onRequest: () => {
           setIsPending(true);
         },
-        onResponse: (response) => {
+        onResponse: () => {
           setIsPending(false);
         },
         onError: (ctx) => {

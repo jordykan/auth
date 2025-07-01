@@ -10,9 +10,7 @@ interface SignInOauthButtonProps {
   signUp: boolean;
 }
 
-const SingInOauthButton = ({ provider, signUp }: SignInOauthButtonProps) => {
-  const action = signUp ? "Up" : "In";
-  const providerName = provider === "google" ? "Google" : "Github";
+const SingInOauthButton = ({ provider }: SignInOauthButtonProps) => {
   const [isPending, setIsPending] = useState(false);
 
   const handleClick = async () => {

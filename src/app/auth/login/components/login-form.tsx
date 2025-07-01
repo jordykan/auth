@@ -1,7 +1,6 @@
 "use client";
 
 import { SignInEmailActions } from "@/actions/sign-in-email-actions";
-import MagicLinkForm from "@/components/custom/magic-link-form";
 import ReturnButton from "@/components/custom/return-button";
 import SingInOauthButton from "@/components/custom/sign-in-oauth-buttons";
 import { Button } from "@/components/ui/button";
@@ -9,7 +8,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { LaughIcon } from "lucide-react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "sonner";
